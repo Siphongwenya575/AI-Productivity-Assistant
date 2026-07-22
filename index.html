@@ -20,8 +20,10 @@
             <h2>✉️ Email Generator</h2>
             <textarea id="email-input" placeholder="Describe the email you want to create (e.g., Request a deadline extension from my manager)..."></textarea>
 
-            <button onclick="generateEmail()">Generate Email</button>
-            <button class="clear-btn" onclick="clearEmail()">Clear</button>
+            <div class="button-group">
+                <button onclick="generateEmail()">Generate Email</button>
+                <button class="clear-btn" onclick="clearEmail()">Clear</button>
+            </div>
 
             <div id="email-output" class="output-box hidden"></div>
         </section>
@@ -31,8 +33,10 @@
             <h2>📝 Meeting Notes Summarizer</h2>
             <textarea id="notes-input" placeholder="Paste meeting notes here..."></textarea>
 
-            <button onclick="summarizeNotes()">Summarize Notes</button>
-            <button class="clear-btn" onclick="clearNotes()">Clear</button>
+            <div class="button-group">
+                <button onclick="summarizeNotes()">Summarize Notes</button>
+                <button class="clear-btn" onclick="clearNotes()">Clear</button>
+            </div>
 
             <div id="notes-output" class="output-box hidden"></div>
         </section>
@@ -42,8 +46,10 @@
             <h2>📅 Task Planner</h2>
             <textarea id="tasks-input" placeholder="Enter your tasks (e.g., Prepare slides, review budget, team sync)..."></textarea>
 
-            <button onclick="createSchedule()">Create Schedule</button>
-            <button class="clear-btn" onclick="clearTasks()">Clear</button>
+            <div class="button-group">
+                <button onclick="createSchedule()">Create Schedule</button>
+                <button class="clear-btn" onclick="clearTasks()">Clear</button>
+            </div>
 
             <div id="tasks-output" class="output-box hidden"></div>
         </section>
@@ -53,8 +59,10 @@
             <h2>🤖 AI Chatbot</h2>
             <textarea id="chat-input" placeholder="Ask a workplace question..."></textarea>
 
-            <button onclick="sendMessage()">Send Message</button>
-            <button class="clear-btn" onclick="clearChat()">Clear</button>
+            <div class="button-group">
+                <button onclick="sendMessage()">Send Message</button>
+                <button class="clear-btn" onclick="clearChat()">Clear</button>
+            </div>
 
             <div id="chat-output" class="output-box hidden"></div>
         </section>
