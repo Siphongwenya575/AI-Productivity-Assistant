@@ -79,10 +79,15 @@ button {
     cursor: pointer;
     font-weight: 600;
     transition: background-color 0.2s ease;
+    margin-right: 10px;
 }
 
 button:hover {
     background-color: #2b6cb0;
+}
+
+.clear-btn {
+    margin-left: 5px;
 }
 
 .output-box {
