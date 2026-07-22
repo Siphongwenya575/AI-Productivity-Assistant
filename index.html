@@ -14,11 +14,15 @@
     </header>
 
     <main class="container">
+
         <!-- Email Generator Card -->
         <section class="card">
             <h2>✉️ Email Generator</h2>
             <textarea id="email-input" placeholder="Describe the email you want to create (e.g., Request a deadline extension from my manager)..."></textarea>
+
             <button onclick="generateEmail()">Generate Email</button>
+            <button class="clear-btn" onclick="clearEmail()">Clear</button>
+
             <div id="email-output" class="output-box hidden"></div>
         </section>
 
@@ -26,7 +30,10 @@
         <section class="card">
             <h2>📝 Meeting Notes Summarizer</h2>
             <textarea id="notes-input" placeholder="Paste meeting notes here..."></textarea>
+
             <button onclick="summarizeNotes()">Summarize Notes</button>
+            <button class="clear-btn" onclick="clearNotes()">Clear</button>
+
             <div id="notes-output" class="output-box hidden"></div>
         </section>
 
@@ -34,7 +41,10 @@
         <section class="card">
             <h2>📅 Task Planner</h2>
             <textarea id="tasks-input" placeholder="Enter your tasks (e.g., Prepare slides, review budget, team sync)..."></textarea>
+
             <button onclick="createSchedule()">Create Schedule</button>
+            <button class="clear-btn" onclick="clearTasks()">Clear</button>
+
             <div id="tasks-output" class="output-box hidden"></div>
         </section>
 
@@ -42,15 +52,28 @@
         <section class="card">
             <h2>🤖 AI Chatbot</h2>
             <textarea id="chat-input" placeholder="Ask a workplace question..."></textarea>
+
             <button onclick="sendMessage()">Send Message</button>
+            <button class="clear-btn" onclick="clearChat()">Clear</button>
+
             <div id="chat-output" class="output-box hidden"></div>
         </section>
+
     </main>
 
     <footer class="footer">
-        <p><small><strong>Responsible AI Disclaimer:</strong> AI-generated outputs should be reviewed and verified prior to professional use.</small></p>
+        <p>
+            <small>
+                <strong>Responsible AI Disclaimer:</strong>
+                This application uses Artificial Intelligence to assist with workplace productivity tasks.
+                AI-generated outputs may contain inaccuracies, omissions, or biases.
+                Users should review and verify all generated content before making professional decisions.
+                This tool is intended to support human decision-making and not replace human judgment.
+            </small>
+        </p>
     </footer>
 
     <script src="script.js"></script>
+
 </body>
 </html>
