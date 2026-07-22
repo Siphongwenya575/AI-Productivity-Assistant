@@ -1,38 +1,56 @@
-<**OCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<he**>
+<head>
     <meta charset="UTF-8">
-    **eta name="viewport" content="widt**device-width, initial-scale=1.0">**   <title>AI Productivity Assista**</title>
-
-    style.css
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Productivity Assistant</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<**dy>
+<body>
 
-    <h1>AI Productivity Assi**ant</h1>
-    <p>Your workplace as**stant for emails, meetings, and t**k planning.</p>
+    <header class="header">
+        <h1>AI Productivity Assistant</h1>
+        <p>Your workplace assistant for emails, meetings, task planning, and smart chat.</p>
+    </header>
 
-    <div class="**rd">
-        <h2>📧 Email Generat**</h2>
-        <textarea placehold**="Describe the email you want to **eate"></textarea>
-        <button**enerate Email</button>
-    </div>**    <div class="card">
-        <h**📝 Meeting Notes Summarizer</h2>
-**      <textarea placeholder="Past**meeting notes here"></textarea>
- **     <button>Summarize Notes</but**n>
-    </div>
+    <main class="container">
+        <!-- Email Generator Card -->
+        <section class="card">
+            <h2>✉️ Email Generator</h2>
+            <textarea id="email-input" placeholder="Describe the email you want to create (e.g., Request a deadline extension from my manager)..."></textarea>
+            <button onclick="generateEmail()">Generate Email</button>
+            <div id="email-output" class="output-box hidden"></div>
+        </section>
 
-    <div class="ca**">
-        <h2>📅 Task Planner</h**
-        <textarea placeholder="E**er your tasks"></textarea>
-      **<button>Create Schedule</button>
-**  </div>
+        <!-- Meeting Notes Summarizer Card -->
+        <section class="card">
+            <h2>📝 Meeting Notes Summarizer</h2>
+            <textarea id="notes-input" placeholder="Paste meeting notes here..."></textarea>
+            <button onclick="summarizeNotes()">Summarize Notes</button>
+            <div id="notes-output" class="output-box hidden"></div>
+        </section>
 
-    <div class="card">
-**      <h2>🤖 AI Chatbot</h2>
-    **  <textarea placeholder="Ask a wo**place question"></textarea>
-     ** <button>Send Message</button>
-  **</div>
+        <!-- Task Planner Card -->
+        <section class="card">
+            <h2>📅 Task Planner</h2>
+            <textarea id="tasks-input" placeholder="Enter your tasks (e.g., Prepare slides, review budget, team sync)..."></textarea>
+            <button onclick="createSchedule()">Create Schedule</button>
+            <div id="tasks-output" class="output-box hidden"></div>
+        </section>
 
-    script.js
+        <!-- AI Chatbot Card -->
+        <section class="card">
+            <h2>🤖 AI Chatbot</h2>
+            <textarea id="chat-input" placeholder="Ask a workplace question..."></textarea>
+            <button onclick="sendMessage()">Send Message</button>
+            <div id="chat-output" class="output-box hidden"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p><small><strong>Responsible AI Disclaimer:</strong> AI-generated outputs should be reviewed and verified prior to professional use.</small></p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-</h**l>
+</html>
