@@ -1,4 +1,4 @@
-// Function to handle API calls with Groq
+// Universal API Handler using Groq
 async function callAI(systemPrompt, userPrompt) {
     let apiKey = localStorage.getItem('groq_api_key');
     
@@ -138,3 +138,17 @@ async function sendMessage() {
         output.textContent = `❌ Error: ${err.message}`;
     }
 }
+
+// Helper Clear Functions
+function clearElement(inputId, outputId) {
+    document.getElementById(inputId).value = '';
+    const output = document.getElementById(outputId);
+    output.textContent = '';
+    output.classList.add('hidden');
+    output.style.display = 'none';
+}
+
+function clearEmail() { clearElement('email-input', 'email-output'); }
+function clearNotes() { clearElement('notes-input', 'notes-output'); }
+function clearTasks() { clearElement('tasks-input', 'tasks-output'); }
+function clearChat()  { clearElement('chat-input', 'chat-output'); }
